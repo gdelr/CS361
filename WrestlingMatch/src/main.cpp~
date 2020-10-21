@@ -1,0 +1,22 @@
+#include <iostream>
+#include <time.h>
+#include <random>
+#include <queue>
+#include "../include/Wrestler.h"
+#include "../include/Team.h"
+
+using namespace std;
+
+int main(){
+
+  Team t1(300);
+  
+  cout<<endl;
+
+  t1.display();
+
+  int num;
+  cin>>num;
+  cout<<(t1.getWrestler(num)->getWeight())<<endl;
+  return 0;
+}
